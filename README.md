@@ -17,7 +17,7 @@ This repository serves as my professional **technical journal**. Here, I documen
 
 ### Issue: `TerminatorExpectedAtEndOfString` Error
 * **Description:** While running the first script, PowerShell returned a red error indicating a string was not properly closed.
-* **Root Cause:** Invisible characters or "smart quotes" (curly quotes) were introduced during the copy-paste process, or the file encoding was corrupted.
+* **Root Cause:** Invisible characters or "smart quotes" (curly quotes) were introduced during the process, or the file encoding was corrupted.
 * **Solution:** 1. Deleted the corrupted `.ps1` file.
     2. Re-created the file from scratch using **UTF-8 encoding**.
     3. Manually verified that all double quotes `"` were straight and properly paired.
