@@ -4,7 +4,7 @@ This repository serves as my professional **technical journal**. Here, I documen
 
 ## 🚀 Daily Technical Progress
 
-### Day 1: System Inventory & Network Discovery
+### Day 1 (18/02/2026): System Inventory & Network Discovery
 * **The Goal:** Establish a baseline of the system's hardware and network configuration using CLI.
 * **Scripts Created:**
     1. `scripts/01_System_Discovery.ps1`: Retrieves OS details, CPU model, RAM capacity, and Disk usage.
