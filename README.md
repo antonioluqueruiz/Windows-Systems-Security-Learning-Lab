@@ -11,7 +11,13 @@ This repository serves as my professional **technical journal**. Here, I documen
     2. `scripts/02_Network_Discovery.ps1`: Maps IPv4 addresses, DNS servers, and active TCP connections.
 * **Technical Skills:** WMI/CIM querying, data formatting (Bytes to GB), and network stack auditing.
 
----
+### Day 2 (19/02/2026): Identity & Access Management (IAM)
+* **The Goal:** Automate user provisioning and audit local security privileges.
+* **Scripts Created:**
+    1. `scripts/03_Local_Admin_Audit.ps1`: Identifies users with administrative rights to enforce the "Principle of Least Privilege".
+    2. `scripts/04_Password_Status.ps1`: Audits account hygiene, checking password expiration and last set dates.
+    3. `scripts/05_Bulk_User_Provisioning.ps1`: Automates the creation of multiple local accounts for new employees.
+* **Technical Skills:** Local group management, security compliance auditing, and hybrid automation using PowerShell and Command Line.
 
 ## 🛠️ Troubleshooting Log (Lessons Learned)
 
@@ -22,6 +28,13 @@ This repository serves as my professional **technical journal**. Here, I documen
     1. Deleted the corrupted `.ps1` file.
     2. Re-created the file from scratch using **UTF-8 encoding**.
     3. Manually verified that all double quotes `"` were straight and properly paired.
-* **Lesson:** When a syntax error persists despite the code looking "correct," recreating the file is the most reliable way to clear hidden encoding issues.
 
----
+### Issue: `NamedParameterNotFound` & `UserNotFound` Errors
+* **Description:** While running the user provisioning script, PowerShell returned red errors indicating that specific parameters (like `-PasswordExpiresAtNextLogon`) were not recognized or users were not found immediately after creation.
+* **Root Cause:** * **Environment mismatch:** Certain PowerShell parameters are only available in **Windows Enterprise** builds or Active Directory environments, causing compatibility issues in local lab setups.
+    * **OS Latency:** The system sometimes fails to register a new user before the next command tries to modify its properties.
+* **Solution:**
+    1. **Hybrid Approach:** Integrated the classic `net user` command for better compatibility across all Windows versions.
+    2. **Execution Timing:** Implemented `Start-Sleep` pauses to ensure the OS completes account registration before applying further changes.
+    3. **File Integrity:** Deleted persistent errors by recreating the `.ps1` files from scratch using **UTF-8 encoding** to clear hidden characters.
+
