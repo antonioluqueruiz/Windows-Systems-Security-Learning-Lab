@@ -31,7 +31,7 @@ This repository serves as my professional **technical journal**. Here, I documen
 
 ### Issue: `NamedParameterNotFound` & `UserNotFound` Errors
 * **Description:** While running the user provisioning script, PowerShell returned red errors indicating that specific parameters (like `-PasswordExpiresAtNextLogon`) were not recognized or users were not found immediately after creation.
-* **Root Cause:** * **Environment mismatch:** Certain PowerShell parameters are only available in **Windows Enterprise** builds or Active Directory environments, causing compatibility issues in local lab setups.
+* **Root Cause:** **Environment mismatch:** Certain PowerShell parameters are only available in **Windows Enterprise** builds or Active Directory environments, causing compatibility issues in local lab setups.
     * **OS Latency:** The system sometimes fails to register a new user before the next command tries to modify its properties.
 * **Solution:**
     1. **Hybrid Approach:** Integrated the classic `net user` command for better compatibility across all Windows versions.
