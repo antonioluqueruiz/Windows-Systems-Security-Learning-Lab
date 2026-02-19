@@ -19,7 +19,7 @@ This repository serves as my professional **technical journal**. Here, I documen
     3. `scripts/05_Bulk_User_Provisioning.ps1`: Automates the creation of multiple local accounts for new employees.
 * **Technical Skills:** Local group management, security compliance auditing, and hybrid automation using PowerShell and Command Line.
 
-## 🛠️ Troubleshooting Log (Lessons Learned)
+## 🛠️ Troubleshooting Log
 
 ### Issue: `TerminatorExpectedAtEndOfString` Error
 * **Description:** While running the first script, PowerShell returned a red error indicating a string was not properly closed.
