@@ -26,7 +26,7 @@ This repository serves as my professional **technical journal**. Here, I documen
     2. `scripts/07_Peripherals_Health_Check.ps1`: Automated hardware discovery for barcode scanners and label printers to prevent line downtime.
 * **Technical Skills:** Statistical analysis of network metrics, PnPDevice management, and proactive maintenance logic.
 
-### Day 4 (25/02/2026): Software Health & Process Reliability
+### Day 4 (24/02/2026): Software Health & Process Reliability
 * **The Goal:** Ensure MES software uptime through automated log rotation and process monitoring.
 * **Scripts Created:**
     1. `scripts/08_MES_Log_Maintenance.ps1`: Automated cleanup utility that removes outdated log files (>7 days) to prevent disk space exhaustion.
