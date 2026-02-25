@@ -26,6 +26,13 @@ This repository serves as my professional **technical journal**. Here, I documen
     2. `scripts/07_Peripherals_Health_Check.ps1`: Automated hardware discovery for barcode scanners and label printers to prevent line downtime.
 * **Technical Skills:** Statistical analysis of network metrics, PnPDevice management, and proactive maintenance logic.
 
+### Day 4 (25/02/2026): Software Health & Process Reliability
+* **The Goal:** Ensure MES software uptime through automated log rotation and process monitoring.
+* **Scripts Created:**
+    1. `scripts/08_MES_Log_Maintenance.ps1`: Automated cleanup utility that removes outdated log files (>7 days) to prevent disk space exhaustion.
+    2. `scripts/09_MES_Process_Watchdog.ps1`: A reliability agent that detects frozen application states and automates process recovery. 
+* **Technical Skills:** Filesystem management, process lifecycle auditing, and automated fault recovery.
+
 ## 🛠️ Troubleshooting Log
 ### Issue: `TerminatorExpectedAtEndOfString` Error
 * **Description:** While running the first script, PowerShell returned a red error indicating a string was not properly closed.
