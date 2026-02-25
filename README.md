@@ -33,6 +33,12 @@ This repository serves as my professional **technical journal**. Here, I documen
     2. `scripts/09_MES_Process_Watchdog.ps1`: A reliability agent that detects frozen application states and automates process recovery. 
 * **Technical Skills:** Filesystem management, process lifecycle auditing, and automated fault recovery.
 
+### Day 5 (25/02/2026): System Integration & Executive Reporting
+* **The Goal:** Create a unified diagnostic dashboard to provide immediate visibility into system health.
+* **Scripts Created:**
+    1. `scripts/10_MES_System_Health_Report.ps1`: An integrative script that audits connectivity, storage availability, and process status in a single execution.
+* **Technical Skills:** Data consolidation, CIM/WMI object querying for hardware metrics, and report formatting for technical management.
+
 ## 🛠️ Troubleshooting Log
 ### Issue: `TerminatorExpectedAtEndOfString` Error
 * **Description:** While running the first script, PowerShell returned a red error indicating a string was not properly closed.
