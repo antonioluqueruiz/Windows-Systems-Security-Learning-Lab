@@ -57,3 +57,18 @@ This repository serves as my professional **technical journal**. Here, I documen
     2. **Execution Timing:** Implemented `Start-Sleep` pauses to ensure the OS completes account registration before applying further changes.
     3. **File Integrity:** Deleted persistent errors by recreating the `.ps1` files from scratch using **UTF-8 encoding** to clear hidden characters.
 
+## 📚 Bibliography and Technical References
+
+This project has been developed following industry standards and official documentation to ensure its applicability in mission-critical pharmaceutical environments.
+
+### 🛠️ Systems and Scripting Documentation
+* **Microsoft Learn: PowerShell Documentation.** Official reference for implementing system administration cmdlets such as `Get-Process`, `Test-Connection`, and `Get-CimInstance`.
+* **WMI/CIM Object Models.** Technical reference for auditing hardware and industrial peripherals via Windows management interfaces.
+
+### 🏭 Manufacturing IT Standards (MES)
+* **ISA-95 (Enterprise-Control System Integration).** International standard for integrating MES (Level 3) with shop-floor infrastructure and network devices.
+* **GAMP 5 (Good Automated Manufacturing Practice).** Fundamental principles for data integrity and validation of automated systems within the pharmaceutical industry.
+
+### 📊 Analysis and Optimization (Mathematical Approach)
+* **Statistical Performance Metrics.** Methodologies for analyzing latency, jitter, and network availability in high-precision industrial environments.
+* **Proactive Resource Management.** Logical framework for system maintenance, including automated log rotation and process monitoring using watchdog patterns.
